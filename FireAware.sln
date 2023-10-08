@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireAware.Android", "FireAware\FireAware.Android\FireAware.Android.csproj", "{D1CF84E3-3F20-4343-89E7-1D305CEB820F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireAware", "FireAware\FireAware\FireAware.csproj", "{0CDF4AC1-FF9A-4E53-B642-E32401E6B611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireAware", "FireAware\FireAware\FireAware.csproj", "{0CDF4AC1-FF9A-4E53-B642-E32401E6B611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
