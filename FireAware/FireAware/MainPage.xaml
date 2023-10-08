@@ -7,16 +7,21 @@
              x:Class="FireAware.MainPage">
 
     <StackLayout Padding="10">
-        <Label Text="Label" x:Name="locationLabel"/>
-        <Entry Placeholder="Enter location" x:Name="textField"/>
-        <CheckBox x:Name="clearCheckbox" CheckedChanged="OnUseCurrentLocationClicked" />
+        <Image x:Name="AlarmIcon" Source="alarm_off.png" HeightRequest="50" WidthRequest="50" />
+        <StackLayout Padding="10" Orientation="Horizontal">
+            <Label Text="Area Name: "/>
+            <Label Text="Vaasa" x:Name="placeName"/>
+        </StackLayout>
+        <StackLayout Padding="10" Orientation="Horizontal">
+            <Label Text="Location: "/>
+            <Label Text="Vaasa" x:Name="locationLabel"/>
+        </StackLayout>
+        <StackLayout Padding="10" Orientation="Horizontal">
+            <Label Text="Recommended Actions"/>
+            <Label x:Name="recommendationLabel"/>
+        </StackLayout>
+        <Image x:Name="mapImageHolder" Source="AI_1.png" HeightRequest="200" WidthRequest="200" />
 
-        <Button Text="Report WildFire" Clicked="OnReportWildFireClicked"/>
-
-       <!--  <Button Text="Check Wildfire" Clicked="OnNavigateClicked"/>-->
-
+        <Button Text="Report New WildFire >" Clicked="OnReportWildFireClicked"/>
     </StackLayout>
-    
 </ContentPage>
-
-    

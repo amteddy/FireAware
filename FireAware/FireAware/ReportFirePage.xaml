@@ -5,15 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FireAware.ReportFirePage">
+
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Report WildFire!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Entry Placeholder="Enter text" x:Name="textField"/>
-            <Image x:Name="imageHolder" />
-            <Button Text="Report" Clicked="OnReportWildFireClicked"/>
 
+            <Label Text="Place: "/>
+            <Entry  Placeholder="Enter place name" x:Name="placeField"/>
+            <Label Text="Wildfire Location: "/>
+            <Entry Placeholder="Enter your location" x:Name="locationField"/>
+            <CheckBox x:Name="clearCheckbox" CheckedChanged="OnUseCurrentLocationClicked" />
+            <Button  Text="Report" Clicked="OnReportWildFireClicked"/>
+            
         </StackLayout>
     </ContentPage.Content>
 
